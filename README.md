@@ -1,5 +1,14 @@
 # carousel
 
+WEB+DB PRESS vol.116
+
+モダンフロントエンド技術
+作って学ぶGUIの仕組み
+
+サンプルコード
+https://github.com/miyaoka/WDP2020_frontend
+
+
 ## Project setup
 ```
 yarn install
