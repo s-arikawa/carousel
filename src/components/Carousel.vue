@@ -2,7 +2,7 @@
   <div class="carousel">
     <div class="itemList" :style="itemListStyle">
       <div v-for="(item, i) in itemList" :key="i" class="item">
-        <img :src="item" class="img" alt="" />
+        <img :src="item" class="img" alt="" width="300" height="300"/>
       </div>
     </div>
     <div class="control">
@@ -36,7 +36,7 @@ export default Vue.extend({
   computed: {
     itemListStyle(): Record<string, string> {
       return {
-        transform: `translateX($(this.index * -100)%)`
+        transform: `translateX(${this.index * -100}%)`
       };
     }
   },
@@ -50,8 +50,20 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-.itemList {
-  transition: ease 0.2s;
+.carousel {
+  width: 300px;
+  overflow: hidden;
+
+  .itemList {
+    display: flex;
+    transition: ease 0.2s;
+  }
+
+  .item {
+  }
+
+  .img {
+  }
 }
 
 .control {
